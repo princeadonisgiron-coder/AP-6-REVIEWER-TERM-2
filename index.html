@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="fil"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>AP Reviewer 🐣 Kalayaan at Neokolonyalismo</title>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700&family=Nunito:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fff4f8;--card:#fff;--ink:#4a3a55;--mut:#8a7a95;--p:#ff8fb8;--l:#b9a7ff;--m:#8fe3c4;--y:#ffe08a;--bad:#ff9a9a;--line:#f3d9e6;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#241b2e;--card:#322640;--ink:#f6eaff;--mut:#bba9cc;--line:#493a5c;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#241b2e;--card:#322640;--ink:#f6eaff;--mut:#bba9cc;--line:#493a5c;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:500 16px/1.5 Nunito,system-ui,sans-serif;background-image:radial-gradient(var(--line) 2px,transparent 2px);background-size:26px 26px}
+h1,h2,h3,.b{font-family:"Baloo 2",Nunito,system-ui,sans-serif}
+.w{max-width:680px;margin:0 auto;padding:16px}
+header{text-align:center;padding:12px 0 4px}
+header h1{margin:0;font-size:1.7rem;line-height:1.2}
+header p{margin:4px 0 0;color:var(--mut);font-size:.9rem}
+.tabs{display:flex;gap:8px;background:var(--card);border:2px solid var(--line);border-radius:999px;padding:5px;margin:14px 0;position:sticky;top:env(safe-area-inset-top,0px);z-index:5}
+.tabs button{flex:1;border:0;border-radius:999px;padding:9px;font:700 1rem "Baloo 2",sans-serif;color:var(--mut);background:none;cursor:pointer}
+.tabs button.on{background:var(--p);color:#fff}
+.card{background:var(--card);border:2px solid var(--line);border-radius:22px;padding:16px;margin:12px 0;box-shadow:0 5px 0 var(--line)}
+details.card summary{cursor:pointer;list-style:none;display:flex;gap:10px;align-items:center;font:700 1.1rem "Baloo 2",sans-serif}
+details.card summary::-webkit-details-marker{display:none}
+.em{font-size:1.7rem;background:var(--y);border-radius:16px;width:46px;height:46px;display:grid;place-items:center;flex:none;color:#000}
+.cp{font-size:.82rem;color:var(--mut);font-weight:500;font-family:Nunito,sans-serif;display:block}
+ul{padding-left:20px;margin:12px 0 8px}li{margin:6px 0}
+.tip{background:var(--y);color:#4a3a2a;border-radius:14px;padding:8px 12px;font-size:.9rem}
+.btn{border:0;border-radius:999px;padding:12px 22px;font:700 1.05rem "Baloo 2",sans-serif;background:var(--l);color:#fff;cursor:pointer;box-shadow:0 4px 0 rgba(0,0,0,.15)}
+.btn:active{transform:translateY(3px);box-shadow:none}
+.btn.p{background:var(--p)}.btn.g{background:var(--m);color:#254}
+.c{text-align:center}
+.mas{font-size:3.4rem;display:inline-block;animation:bob 2s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(-8px) rotate(-4deg)}}
+@media(prefers-reduced-motion:reduce){.mas{animation:none}}
+.bar{height:14px;background:var(--line);border-radius:99px;overflow:hidden}
+.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--p),var(--l));border-radius:99px;transition:width .3s}
+.chip{display:inline-block;background:var(--l);color:#fff;border-radius:99px;padding:2px 12px;font-size:.8rem;font-weight:700}
+.q{font-size:1.1rem;font-weight:700;margin:10px 0 14px}
+.o{display:block;width:100%;text-align:left;margin:9px 0;padding:12px 14px;border:2px solid var(--line);border-radius:16px;background:var(--card);color:var(--ink);font:inherit;cursor:pointer}
+.o:hover:not(:disabled){border-color:var(--l)}
+.o.ok{background:var(--m);border-color:#4cc79b;color:#134}
+.o.no{background:var(--bad);border-color:#e66;color:#411}
+.ex{margin-top:12px;padding:10px 14px;border-radius:14px;background:var(--bg);border:2px dashed var(--l);font-size:.92rem}
+.row{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.big{font:700 3rem "Baloo 2",sans-serif;line-height:1}
+.tp{display:flex;align-items:center;gap:8px;margin:8px 0;font-size:.88rem}.tp .bar{flex:1}.tp span:first-child{width:110px;flex:none}
+.miss{border-left:6px solid var(--p);padding:6px 12px;margin:10px 0;background:var(--bg);border-radius:10px;font-size:.9rem}
+footer{text-align:center;color:var(--mut);font-size:.8rem;padding:14px}
+</style></head>
+<body><div class="w">
+<header><div class="mas" aria-hidden="true">🐣</div><h1>AP Reviewer ✨</h1><p>Kalayaan • Kaayusang Panlipunan • Neokolonyalismo</p></header>
+<nav class="tabs"><button id="t0" class="on">📚 Aralin</button><button id="t1">📝 Mock Quiz</button></nav>
+<main id="app"></main>
+<footer>Kaya mo ’yan! 💪🌸 Balikan ang aralin bago ang quiz.</footer>
+</div>
+<script>
+const T=[
+{e:'🕊️',t:'Pagpupunyagi tungo sa Kalayaan',c:'Pananaliksik sa kontribusyon ng pagpupunyagi ng mga Pilipino',p:['Jones Law (1916): pangako ng kalayaan kapag matatag na ang pamahalaan.','OSROX Mission (1931) nina Osmeña at Roxas → Hare-Hawes-Cutting Act (1933), na tinanggihan ni Quezon.','Tydings-McDuffie Act (1934): Komonwelt (1935) at 10-taong paghahanda sa kalayaan.','Gerilya at paglaban sa Hapon noong WWII.','Hulyo 4, 1946: ganap na kalayaan; Manuel Roxas ang unang pangulo ng Ikatlong Republika.','Mula 1962, Hunyo 12 (1898) na ang ipinagdiriwang na Araw ng Kalayaan.'],k:'Tydings-McDuffie = 10 taon → 1935 + 10 = 1945/46 🎉'},
+{e:'🏚️',t:'Kaayusang Panlipunan Pagkatapos ng WWII',c:'Paglalarawan ng lipunan pagkatapos ng digmaan',p:['Wasak ang Maynila at imprastruktura; kulang sa pagkain, tirahan, at trabaho.','Suliraning agraryo: tenancy at kawalan ng lupa → paglaban ng Hukbalahap (HMB).','Amnestiya ni Roxas sa mga kolaboreytor; talamak ang katiwalian.','Magsaysay: “Land for the Landless” at EDCOR; RA 1199 (1954) at RA 1400 (1955).','Macapagal: RA 3844 Agricultural Land Reform Code (1963).'],k:'Huk = magsasakang walang lupa 🌾'},
+{e:'💰',t:'Patakarang Pang-ekonomiya 1946–1986',c:'Mga patakaran na nakatali sa neokolonyalismo',p:['Bell Trade Act (1946): free trade sa loob ng 8 taon, quota, parity rights, at ₱2 = $1.','Parity rights: pantay na karapatan ng Amerikano sa likas-yaman at negosyo.','Rehabilitation Act: bayad-pinsala sa digmaan, kondisyon ang pagtanggap sa Bell Act.','Laurel-Langley (1955): binago ang Bell Act; naging magkabilaan ang parity rights.','Quirino (1949): import at exchange controls. Garcia: Filipino First Policy.','Macapagal (1962): decontrol. Marcos: export-oriented industrialization, utang sa IMF-WB, EPZ.'],k:'Bell → Laurel-Langley → Filipino First → Decontrol 📈'},
+{e:'🎖️',t:'Kasunduang Militar ng Pilipinas at US',c:'Layunin ng mga kasunduang militar',p:['Military Bases Agreement (1947): 99 taon; Clark at Subic; ginawang 25 taon noong 1966.','Military Assistance Pact (1947) at JUSMAG: tulong at pagsasanay militar.','Mutual Defense Treaty (1951): tulungan ang isa’t isa kapag may armadong pag-atake.','SEATO (1954): alyansa laban sa komunismo sa Timog-Silangang Asya.','Layunin ng US: estratehikong base sa Asya-Pasipiko. Puna: nalalabag ang soberanya.','1991: tinanggihan ng Senado ang bagong kasunduan sa bases. Kasunod: VFA (1998) at EDCA (2014).'],k:'MBA ’47 • MDT ’51 • SEATO ’54 • VFA ’98 • EDCA ’14 🛡️'},
+{e:'🌏',t:'Epekto ng Neokolonyalismo',c:'Konklusyon sa epekto sa kultura at lipunan',p:['Neokolonyalismo: di-tuwirang kontrol ng makapangyarihang bansa sa ekonomiya, politika, militar, at kultura.','Kultura: colonial mentality, pagtangkilik sa dayuhan, Hollywood at pop culture, brain drain.','Lipunan: pag-asa sa dayuhang kapital at utang; lumalaking agwat ng mayaman at mahirap.','Makabayang tugon: Claro M. Recto, Lorenzo Tañada, Filipino First, wikang Filipino, kilusang kabataan.','Konklusyon: ang tunay na kalayaan ay pagsasarili sa ekonomiya at pag-iisip.'],k:'Alis ang dayuhan ≠ laya na. Dapat laya rin ang isip 🧠'}];
+// [tanong, TAMA, mali, mali, mali, paliwanag]
+const Q=[
+['Kailan ganap na nakamit ng Pilipinas ang kalayaan mula sa Amerika?','Hulyo 4, 1946','Hunyo 12, 1898','Nobyembre 15, 1935','Pebrero 25, 1986','Hulyo 4, 1946 ang Republic Day; ang Hunyo 12, 1898 ay deklarasyon ni Aguinaldo.'],
+['Aling batas ang nagtakda ng 10-taong paglipat tungo sa kalayaan at nagtatag ng Komonwelt?','Tydings-McDuffie Act','Jones Law','Bell Trade Act','Laurel-Langley Agreement','Tydings-McDuffie (1934) ang naghanda sa Komonwelt noong 1935.'],
+['Sino ang tumutol sa Hare-Hawes-Cutting Act at nagtaguyod ng bagong batas?','Manuel L. Quezon','Sergio Osmeña','Manuel Roxas','Emilio Aguinaldo','Tinanggihan ni Quezon ang HHC kaya nabuo ang Tydings-McDuffie.'],
+['Sino ang unang pangulo ng Ikatlong Republika ng Pilipinas?','Manuel Roxas','Elpidio Quirino','Ramon Magsaysay','Sergio Osmeña','Si Roxas ang nanalo noong 1946 at umupo nang ideklara ang kalayaan.'],
+['Anong misyon ang pinamunuan nina Osmeña at Roxas upang humingi ng kalayaan?','OSROX Mission','Taft Commission','Schurman Commission','Misyong Propaganda','OSROX = OSmeña + ROXas.'],
+['Alin ang HINDI halimbawa ng pagpupunyagi ng mga Pilipino tungo sa kalayaan?','Pagtanggap sa pamamahala ng dayuhan nang walang pagtutol','Pagpapadala ng mga misyong pangkalayaan','Pakikibaka ng mga gerilya laban sa Hapon','Pagsuporta sa Komonwelt bilang paghahanda','Ang pagsang-ayon na walang pagtutol ay kabaligtaran ng pagpupunyagi.'],
+['Alin ang naglalarawan sa kalagayan ng Pilipinas pagkatapos ng WWII?','Wasak ang imprastruktura at laganap ang kahirapan','Maunlad ang industriya at sagana sa pagkain','Walang suliraning pang-ekonomiya','Ganap nang nakapagsasarili ang ekonomiya','Napinsala ang Maynila, bukirin, at kabuhayan.'],
+['Bakit lumaban ang Hukbalahap (HMB) matapos ang digmaan?','Dahil sa kawalan ng lupa at hindi patas na sistemang agraryo','Upang ibalik ang Espanya','Upang suportahan ang Bell Trade Act','Upang magtayo ng base militar','Ugat ng Huk ang suliranin ng mga magsasaka.'],
+['Sino ang nagpatupad ng programang “Land for the Landless” at EDCOR?','Ramon Magsaysay','Ferdinand Marcos','Carlos Garcia','Manuel Roxas','Si Magsaysay ang nagbigay-lupa sa mga dating Huk at magsasaka.'],
+['Ang RA 3844 o Agricultural Land Reform Code (1963) ay ipinatupad sa panunungkulan ni:','Diosdado Macapagal','Elpidio Quirino','Ferdinand Marcos','Carlos Garcia','Si Macapagal ang lumagda sa RA 3844.'],
+['Ano ang amnestiya na ipinatupad ni Roxas?','Pagpapatawad sa mga Pilipinong nakipagtulungan sa Hapon','Pagbabawal sa mga Huk','Pagpapatalsik sa mga Amerikano','Pagbabayad ng utang sa US','Ipinatupad ito noong 1948 bilang hakbang tungo sa pagkakasundo, bagaman pinuna ito ng marami.'],
+['Anong batas ang nagbigay ng free trade sa US at nagbigay ng parity rights?','Bell Trade Act','Tydings-McDuffie Act','Hare-Hawes-Cutting Act','Jones Law','Bell Trade Act (Philippine Trade Act) ng 1946.'],
+['Ano ang kahulugan ng parity rights?','Pantay na karapatan ng Amerikano at Pilipino sa paggamit ng likas-yaman at pagnenegosyo','Pantay na sahod ng manggagawa','Pantay na bilang ng upuan sa Kongreso','Pantay na buwis sa pag-angkat','Dahil dito, nabago ang Saligang Batas noong 1947.'],
+['Ano ang kondisyon upang matanggap ang bayad-pinsala sa digmaan sa ilalim ng Rehabilitation Act?','Pagtanggap sa Bell Trade Act','Pagpapaupa ng Maynila','Pagsapi sa SEATO','Pagtigil ng industriyalisasyon','Nakatali ang tulong pinansyal sa Bell Act.'],
+['Ano ang pangunahing pagbabago sa Laurel-Langley Agreement (1955)?','Binago ang Bell Act at naging magkabilaan ang parity rights','Itinaas ang buwis sa lahat ng produkto','Binuwag ang mga base militar','Ipinagbawal ang dayuhang negosyo','Unti-unting taripa at reciprocal na parity.'],
+['Ano ang layunin ng Filipino First Policy ni Carlos P. Garcia?','Unahin ang mga Pilipino sa negosyo at likas-yaman','Hikayatin ang dayuhang pag-aari ng lupa','Isara ang lahat ng pabrika','Ibalik ang Bell Trade Act','Nasyonalistang patakarang pang-ekonomiya.'],
+['Ano ang pangunahing layunin ng import at exchange controls noong 1949?','Pigilan ang pagkaubos ng dolyar at suportahan ang lokal na industriya','Palaganapin ang mga produktong dayuhan','Alisin ang buwis','Ibenta ang mga base militar','Isinagawa ito sa panahon ni Pangulong Quirino.'],
+['Isang epekto ng patakarang pang-ekonomiya ni Marcos na umasa sa IMF-World Bank ay:','Paglaki ng utang panlabas','Paglaya sa utang','Pagtigil ng pag-export','Pagbabalik ng parity rights lamang','Lumobo ang utang ng bansa hanggang 1986.'],
+['Ilang taon ang unang itinakda ng Military Bases Agreement (1947) para sa mga base ng US?','99 taon','25 taon','50 taon','10 taon','Ginawang 25 taon ang natitirang panahon noong 1966.'],
+['Ano ang nilalaman ng Mutual Defense Treaty (1951)?','Tulungan ang Pilipinas at US kapag may armadong pag-atake sa isa','Pagbibigay ng kalayaan sa Pilipinas','Pagbabawal sa dayuhang negosyo','Pagbuwag ng hukbong Pilipino','Isa itong kasunduang pangdepensa.'],
+['Ano ang layunin ng SEATO (1954)?','Pigilan ang pagkalat ng komunismo sa Timog-Silangang Asya','Itaguyod ang malayang kalakalan sa Europa','Magtayo ng pamahalaang militar sa Pilipinas','Magpalaganap ng wikang Ingles','Bahagi ng Cold War ang SEATO.'],
+['Alin ang kasunduang nilagdaan noong 1998 na nagpapahintulot ng pagbisita ng tropang Amerikano?','Visiting Forces Agreement (VFA)','EDCA','Military Bases Agreement','Mutual Defense Treaty','VFA 1998 at pinagtibay noong 1999.'],
+['Ano ang naging pasya ng Senado ng Pilipinas noong 1991 tungkol sa pagpapalawig ng kasunduan sa base militar?','Tinanggihan ito','Pinayagan ito nang 99 taon','Ipinasa ito sa plebisito','Ipinagpaliban hanggang 2020','Natapos ang pananatili ng mga base ng US.'],
+['Alin ang pangunahing layunin ng US sa mga kasunduang militar sa Pilipinas?','Mapanatili ang estratehikong impluwensiya sa Asya-Pasipiko','Gawing kolonya muli ang Pilipinas','Ipamigay ang Subic at Clark','Wakasan ang Cold War','Estratehiko ang lokasyon ng Pilipinas.'],
+['Ano ang neokolonyalismo?','Di-tuwirang kontrol ng makapangyarihang bansa sa dating kolonya','Tuwirang pananakop ng militar','Pagtatayo ng bagong kolonya sa buwan','Pagsasarili ng isang bansa','Sa ekonomiya, politika, militar, at kultura.'],
+['Alin ang halimbawa ng neokolonyalistang pananaw sa kultura?','Mas pinapahalagahan ang produkto at wikang dayuhan kaysa lokal','Pagtangkilik sa sariling wika','Pagdiriwang ng pistang bayan','Pagpapahalaga sa katutubong sining','Kilala ito bilang colonial mentality.'],
+['Sino ang makabayang senador na tumutol sa parity rights at nagtaguyod ng nasyonalismo?','Claro M. Recto','Manuel Roxas','Elpidio Quirino','Carlos Garcia','Kilalang nasyonalista si Recto, kasama si Lorenzo Tañada.'],
+['Alin ang HINDI epekto ng neokolonyalismo sa lipunang Pilipino?','Ganap na pagsasarili sa ekonomiya at kultura','Pag-asa sa dayuhang kapital','Colonial mentality','Paglaki ng utang panlabas','Salungat ang ganap na pagsasarili sa neokolonyalismo.'],
+['Bakit sinasabing may “tali” ang kalayaan ng Pilipinas noong 1946?','Dahil nanatili ang kontrol ng US sa ekonomiya at militar sa pamamagitan ng mga kasunduan','Dahil hindi pa tapos ang WWII','Dahil Espanya pa rin ang namamahala','Dahil walang pangulo ang bansa','Bell Trade Act, parity rights, at military bases ang mga “tali”.']
+];
+const B=[6,11,18,24,30],TN=['Kalayaan','Lipunan','Ekonomiya','Militar','Neokolonyalismo'];
+const $=s=>document.querySelector(s),app=$('#app');
+let st={};
+function tab(n){$('#t0').classList.toggle('on',n==0);$('#t1').classList.toggle('on',n==1);n?intro():learn()}
+$('#t0').onclick=()=>tab(0);$('#t1').onclick=()=>tab(1);
+function learn(){app.innerHTML=`<div class="card c"><b class="b">Basahin muna, tapos mag-quiz! 🍓</b><br><span style="color:var(--mut);font-size:.9rem">Pindutin ang bawat card para buksan.</span></div>`+T.map((x,i)=>`<details class="card"><summary><span class="em">${x.e}</span><span>${i+1}. ${x.t}<span class="cp">${x.c}</span></span></summary><ul>${x.p.map(a=>`<li>${a}</li>`).join('')}</ul><div class="tip">💡 ${x.k}</div></details>`).join('')+`<div class="c"><button class="btn p" onclick="tab(1)">Mag-quiz na tayo! 📝</button></div>`}
+function intro(){app.innerHTML=`<div class="card c"><div class="mas">🐥</div><h2 style="margin:6px 0">Mock Quiz</h2><p>30 aytem • isang sagot bawat tanong<br>May agarang paliwanag pagkatapos sumagot!</p><button class="btn p" onclick="start(0)">Simulan ✨</button> <button class="btn" onclick="start(1)">Halo-halo 🔀</button><p style="color:var(--mut);font-size:.85rem">Halo-halo = hinahalo ang pagkakasunod ng tanong.</p></div>`}
+const sh=a=>{a=[...a];for(let i=a.length-1;i>0;i--){const j=Math.random()*(i+1)|0;[a[i],a[j]]=[a[j],a[i]]}return a};
+function start(mix){let items=Q.map((q,i)=>({q:q[0],t:B.findIndex(b=>i<b),o:sh([[q[1],1],[q[2],0],[q[3],0],[q[4],0]]),x:q[5]}));
+st={items:mix?sh(items):items,i:0,s:0,miss:[],tp:[0,0,0,0,0],tt:[0,0,0,0,0]};show()}
+function show(){const it=st.items[st.i];st.locked=0;
+app.innerHTML=`<div class="card"><div class="row"><span class="mas" id="mo" style="font-size:2.2rem;animation:none">🐣</span><span class="chip">${TN[it.t]}</span><b class="b">${st.i+1}/30 • ⭐ ${st.s}</b></div><div class="bar" style="margin:10px 0"><i style="width:${st.i/30*100}%"></i></div><div class="q">${it.q}</div>${it.o.map((o,k)=>`<button class="o" data-k="${k}">${'ABCD'[k]}. ${o[0]}</button>`).join('')}<div id="fb"></div></div>`;
+app.querySelectorAll('.o').forEach(b=>b.onclick=()=>pick(+b.dataset.k))}
+function pick(k){if(st.locked)return;st.locked=1;const it=st.items[st.i],ok=it.o[k][1];
+st.tt[it.t]++;if(ok){st.s++;st.tp[it.t]++}else st.miss.push({q:it.q,a:it.o.find(o=>o[1])[0]});
+app.querySelectorAll('.o').forEach((b,j)=>{b.disabled=true;if(it.o[j][1])b.classList.add('ok');else if(j==k)b.classList.add('no')});
+$('#mo').textContent=ok?'🥳':'🥺';
+$('#fb').innerHTML=`<div class="ex"><b class="b">${ok?'Tama! 🎉':'Naku, hindi pa. 💔'}</b> ${it.x}</div><div class="c" style="margin-top:12px"><button class="btn g" id="nx">${st.i<29?'Susunod →':'Tingnan ang resulta 🎀'}</button></div>`;
+$('#nx').onclick=()=>{st.i++;st.i<30?show():done()}}
+function done(){const p=st.s/30,m=p>=.9?['🏆','Wow, henyo ka! Handa ka na!']:p>=.75?['🌟','Ang galing! Konting review pa.']:p>=.5?['🌱','Magandang simula! Balikan ang aralin.']:['🫶','Okay lang ’yan! Review ulit tayo.'],stars='⭐'.repeat(Math.max(1,Math.round(p*5)));
+app.innerHTML=`<div class="card c"><div class="mas">${m[0]}</div><div class="big">${st.s}<small style="font-size:1.3rem">/30</small></div><div style="font-size:1.6rem">${stars}</div><p class="b" style="font-size:1.1rem">${m[1]}</p></div><div class="card"><b class="b">Iskor kada paksa 📊</b>${TN.map((n,i)=>`<div class="tp"><span>${n}</span><div class="bar"><i style="width:${st.tt[i]?st.tp[i]/st.tt[i]*100:0}%"></i></div><span>${st.tp[i]}/${st.tt[i]}</span></div>`).join('')}</div>`+(st.miss.length?`<div class="card"><b class="b">Balikan natin ang mga mali 🔍</b>${st.miss.map(x=>`<div class="miss">${x.q}<br><b>✔ ${x.a}</b></div>`).join('')}</div>`:'')+`<div class="c"><button class="btn p" onclick="start(1)">Ulitin 🔀</button> <button class="btn" onclick="tab(0)">Balik sa Aralin 📚</button></div>`;window.scrollTo(0,0)}
+learn();
+</script></body></html>
